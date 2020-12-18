@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Presidential Pizza</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To be used with media queries-->
+		<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Teko:wght@300&display=swap" rel="stylesheet"> <!-- Google fonts reference -->
+	</head>
+	
+	<script>	
+	
+	function showHide() {
+		var isit = document.getElementById('hideTask');
+		if (isit.style.display === 'none') {
+			isit.style.display = 'inline'; 
+			//respects the margins and paddings - change it to see what happens!
+		} else {
+			isit.style.display = 'none';
+		}
+	}
+	
+
+	</script>
+	
+	<body>
+		<div class="all"> <!-- Class used for overall page -->
+			<center>
+				<div id="nameOfPizza">
+					<h1> Presidential Pizza </br> <span id="slogin">-The pizza you couldn't impeach-</span> </h1>
+				</div>
+			</center>
+				<!--side bar was made by Joshua -->
+				<div id="sidebar">
+					<img src="images/Logo.png" alt="logo" class="logo">
+					<a href="index.html">Home</a><br/><br/>
+					<a href="contact.html">Contact</a><br/><br/>
+					<a href="gallery.html">Gallery</a><br/><br/>
+					<a href="game.html">Game</a><br/><br/>
+					<a href="forumSubmit.html">Query</a><br/><br/>
+				</div>
+			<center>
+			<table id="table1">
+				<tr>
+					<th>Special Christmas Offers!</th>
+				</tr>	
+				<tr>
+					<td> One 14' pizza and two boxes of cookies for €23,990! </td>
+				<tr>
+					<td> Any 16'pizza, any 120ml drink with four sides for only €32,850! </td>
+				<tr>
+					<td> Limited time turkey pizza, comes with 4 pizza's and two 120ml Coke Cola bundle! €40,000! </td>
+				</tr>
+			</table>
+				</br>
+					<!--<input type="button" value="Hide Vegan menu" 
+						onclick="document.getElementById('vegan').style.visibility='hidden'">
+
+					<input type="button" value="Show Vegan menu"
+						onclick="document.getElementById('vegan').style.visibility='visible'">-->
+						<button onclick="showHide()">Show menu</button>
+									</br>
+									</br>
+			<div id="hideTask" >
+				<div>
+					<table id="vegan">
+						<tr>
+							<th> Vegan Options </th>
+						</tr>	
+						<tr>
+							<td> Garlic and Humus pizza for €45,000</td>
+						<tr>
+							<td> Evian Water Meal Deal: Vegan Cheese Pizza's and two 50ml bottles for only €80,000!</td>
+						<tr>
+							<td> Limited time Turkey Pizza, comes with 4 pizza's and two 120ml Coke Cola bundle! €40,000! </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			</br>
+				</br>
+			<table id="menuClassic">
+				<tr>
+					<th> Classic Menu </th>
+				</tr>	
+				<tr>
+					<td> Margarita Pizza (7' - 16') for only (€5,000 - €15,000) </td>
+				<tr>
+					<td> Any 16' Pizza for €20,000 </td>
+				<tr>
+					<td> 4' Garlic Bread Pizza for €5,000 </td>
+				</tr>
+				<tr>
+					<td> Any 120ml Drink for €2,500 </td>
+				</tr>
+			</table>
+				</br>
+					<p id="legit"> Totally legitimate customer reviews </p> 
+			</center>
+				</br>
+				<!-- code used for gallery is from w3schools https://www.w3schools.com/css/css_image_gallery.asp -->
+		<div class="gallery">
+			<a target="_blank" href="images/jeff.jpg">
+				<img src="images/jeff.jpg" alt="jeff" class="img" border="2px white">
+			</a>
+		<div class="desc">Here's one of our regulars his is name is Jeff,Jeff has never said anything bad about us, please igonre the rats.</div>
+		</div>
+		<div class="gallery">
+			<a target="_blank" href="images/stacy.jpg">
+				<img src="images/stacy.jpg" alt="stacy" class="img" border="2px white">
+			</a>
+		<div class="desc">As you can see heres another loyal customer called Stacy whos trying out our limited turkey pizza I bet shes lovin it.</div>
+		</div>
+	</body>
+	<footer>
+		<p id="copyRight">  &#169;PresidentialPizza 2020</p>
+	</footer>
+</html>

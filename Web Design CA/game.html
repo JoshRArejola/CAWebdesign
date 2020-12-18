@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Presidential Pizza</title>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To be used with media queries-->
+		<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Teko:wght@300&display=swap" rel="stylesheet"> <!-- Google fonts reference -->
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	
+	<script>
+		//Pizza game code
+		function pizzaGame(){
+			var user;
+			var computer;
+			var message;
+			var score = 0; // Used for tracking the score of the player
+			for(var i=1; i < 6; i++){
+				computer = Math.floor(Math.random()*5)+1;
+				user = parseInt(prompt("Enter a topping number!")); //Prompting user for an answer
+					if (computer === 1){
+						if(user === 1){
+							score++;
+							message = "You guessed correctly! Go again!";
+						}else {
+							message = "Wrong!, Guess again!";
+						}
+					}else if(computer === 2){
+						if(user === 2){
+							score++;
+							message = "You guessed correctly! Go again!";
+						}else{
+							message = "Wrong!, Guess again!";
+						}
+					}else if(computer === 3){
+						if(user === 3){
+							score++;
+							message = "You guessed correctly! Go again!";
+						}else{
+							message = "Wrong!, Guess again!";
+						}
+					}else if(computer === 4){
+						if(user === 4){
+							score++;
+							message = "You guessed correctly! Go again!";
+						}else{
+							message = "Wrong!, Guess again!";
+						}
+					}else if(computer === 5){
+						if(user === 5){
+							score++;
+							message = "You guessed correctly! Go again!";
+						}else{
+							message = "Wrong!, Guess again!";
+						}
+					}
+					alert(message);//Displays message if user got right or wrong answer
+				}
+				document.getElementById("userMessage").textContent = "Thanks for playing! You guessed the topping " + score + " times!";//Displays total score of user
+			}
+	</script>
+	
+	<body>
+		<div class="all"> <!-- Class used for overall page -->
+			<center>
+				<div id="nameOfPizza"> <!--Header-->
+					<h1> Presidential Pizza </br> <span id="slogin">-The pizza you couldn't impeach-</span> </h1>
+				</div>
+			</center>	
+			
+			<img src="images/Logo.png" alt="logo" class="logo">
+			
+			<div id="sidebar">
+				<a href="index.html">Home page</a><br/><br/>
+				<a href="contact.html">Contact</a><br/><br/>
+				<a href="gallery.html">Gallery</a><br/><br/>
+				<a href="game.html">Game</a><br/><br/>
+				<a href="forumSubmit.html">About us</a>
+			</div>
+				
+			<div id="instruction">
+				<p>Guess the topping the customer wants!</p>
+			</div>
+				
+			<div id="game">
+				<input class="button" type="button" value="Start Guessing!" onclick="pizzaGame()">
+			</div>
+			
+			<img src="images/Pineapple.jpg" alt="Pineapple" class="toppings">
+			<img src="images/Chicken.jpg" alt="Chicken" class="toppings">
+			<img src="images/Mushrooms.jpg" alt="Mushrooms" class="toppings">
+			<img src="images/Onion.jpg" alt="Onion" class="toppings">
+			<img src="images/Pepperoni.jpg" alt="Pepperoni" class="toppings">
+			
+			<div id="userMessage"></div>
+			
+		</div>
+	</body>
+	
+	<footer>
+		<p id="copyRight">  &#169;PresidentialPizza 2020</p>
+	</footer>
+	
+</html>
